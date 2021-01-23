@@ -22,9 +22,9 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/tes-cache-1', function () {
-    \RedisPhp::set('kota', 'Papua');
-    \RedisPhp::set('mobil', 'Toyota');
-    \RedisPhp::set('buah', 'Pepaya');
-    dd(\RedisPhp::get('mobil'));
+    // \RedisPhp::set('kota', 'Papua');
+    // \RedisPhp::set('mobil', 'Toyota');
+    // \RedisPhp::set('buah', 'Pepaya');
+    dd(\RedisPhp::get('buah'));
 });
 
